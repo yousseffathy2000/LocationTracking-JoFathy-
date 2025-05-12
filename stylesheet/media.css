@@ -1,0 +1,29 @@
+/* Small devices such as large phones (576px and up) */
+@media only screen and (max-width: 576px) {
+    
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (max-width: 768px) {
+    
+}
+
+/* Large devices such as laptops (992px and up) */
+@media only screen and (max-width: 992px) {
+    .navbar-nav{padding-top: 30px;}
+}
+
+/* X-Large devices such as laptops (1200px and up) */
+@media only screen and (max-width: 1200px) {
+    
+}
+
+/* XX-Large devices such as desktops (1400px and up) */
+@media only screen and (max-width: 1400px) {
+    
+}
+
+
+@media only screen and (max-width: 270px) {
+    .navbar-toggler{margin-top: 10px;}
+}

@@ -1,0 +1,212 @@
+/* START General */
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --main-background-color:#1E202B;
+    --second-background-color:#262936;
+    --main-color:white;
+    --second-color:#bfc1c8;
+    --third-color:#009ad8;
+}
+
+body{
+    font-family: Roboto, "Open Sans", sans-serif;
+}
+/* END General */
+
+
+/* START Navbar */
+.navbar{
+    background-color: var(--main-background-color);
+}
+
+.nav-link{
+    color: var(--main-color);
+    border: 2px solid transparent;
+    border-radius: 30px;
+    transition: 0.3s ease;
+}
+
+.nav-link:hover{
+    color: var(--third-color);
+    border-color: var(--third-color);
+}
+
+.nav-link:focus{
+    border-color: var(--main-color);
+    border-width: 1px;
+    color: var(--main-color);
+    border-style: dotted;
+}
+
+.navbar-nav .nav-link.active{
+    color: var(--third-color);
+    border: 2px solid var(--third-color);
+    border-radius: 30px;
+}
+
+.navbar-toggler{
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.brand{
+    gap: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-tittle{
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: -14px;
+}
+
+.brand-description{
+    font-weight: 300;
+    font-size: 11px;
+    color: var(--second-color);
+}
+/* END Navbar */
+
+
+/* START Main */
+main{
+    background: var(--main-background-color);
+    background-image: url(../images/banner.png);
+    background-repeat: no-repeat;
+    /* height: 80vh; */
+}
+
+.btn{
+    right: 5px; 
+    top: 5px;
+    bottom: 5px;
+    z-index: 2;
+    background-color: var(--third-color);
+}
+
+.btn:hover{
+    background-color: var(--third-color);
+}
+
+input[type="text"]{
+    background-color: var(--main-background-color);
+    color: white;
+    border: none;
+    outline: 0;
+}
+
+:not(.btn-check)+.btn:active{
+    background-color: var(--third-color);
+    border-color: var(--third-color);
+}
+
+.card{
+    border:none;
+}
+
+.card-header{
+    color: var(--second-color);
+    background-color: #2D303D;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    border:none ;
+}
+
+.card-header-center{
+    background-color: #222530;
+}
+
+.card-body{
+    background-color: #323544;
+}
+
+.card-body-center{
+    background-color: #262936;
+}
+
+.card-body .city{
+    color: var(--second-color);
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.card-body .degree-top{
+    color: var(--main-color);
+    font-size: 5.625rem;
+    font-weight: 700;
+}
+
+.card-body .weather-description{
+    color: var(--third-color);
+    font-family: 300;
+    font-size: .875rem;
+    line-height: 21px;
+}
+
+
+.card-body ul li{
+    color: var(--second-color);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 21px;
+}
+
+.card-body .degree{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    color: var(--main-color);
+}
+
+.card-body .second-degree{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    color: var(--second-color);
+}
+/* END Main */
+
+
+/* START Footer */
+footer{
+    background-color: var(--second-background-color);
+}
+
+footer p{
+    color: var(--second-color);
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+footer ul li a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--main-background-color);
+    color: var(--third-color);
+    transition: 0.3s ease;
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+footer ul li:hover a{
+    background-color: var(--third-color);
+    color: white;
+}
+/* END Footer */
