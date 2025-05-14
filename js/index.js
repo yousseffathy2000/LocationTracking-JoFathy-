@@ -74,5 +74,3 @@ function displyData(response, imageUrl){
                         </div>`;
     document.getElementById("card-group").innerHTML = cartona;
     }
-
-
